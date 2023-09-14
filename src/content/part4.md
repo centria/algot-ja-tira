@@ -203,7 +203,7 @@ We can go through the nodes of a binary tree from the root recursively. There ar
 ![Binary tree 1](https://github.com/centria/algo-and-data/raw/master/src/images/materials/binarytree1.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
-In the example we used already above, we have a *pre-order* of **\[1,2,4,3,5,6,7,8\]**, *in-order* of **\[4,2,1,5,3,7,6,8\]** and *post-order* of **\[4,2,5,7,8,6,3,1\]**. We can traverse all the nodes of a binary tree in these orders using recursion. For example, the following method prints the nodes of the tree with in-order, when given the root as a parameter:
+In the example we used already above, we have a *pre-order* of **\[1,2,4,3,5,6,7,8\]**, *in-order* of **\[4,2,1,5,3,7,6,8\]** and *post-order* of **\[4,2,5,7,8,6,3,1\]**. We can traverse all the nodes of a binary tree in these orders using recursion. For example, the following method prints the nodes of the tree with *in-order*, when given the root as a parameter:
 
 ```console
 printNode(node)
@@ -213,6 +213,30 @@ printNode(node)
   print(node.value)
   printNode(node.right)
 ```
+
+To do the same in *pre-order* we can use the following:
+
+```console
+
+printNode(node):
+  if node == null
+    return
+  print(node.value)
+  printNode(node.left)
+  printNode(node.right)
+```
+
+To do the same in *post-order* we can use the following:
+
+```console
+printNode(node):
+  if node == null
+    return
+  printNode(node.left)
+  printNode(node.right)
+  print(node.value)
+```
+
 
 
 ## Binary search tree
