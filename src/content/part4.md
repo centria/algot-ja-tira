@@ -449,7 +449,7 @@ int[] c2 = o.Create(a2, b2);
 Console.WriteLine(String.Join(" ", c2)); // 2 3 5 1 4    
 ```
 
-<Note>For this exercise, google is definately your friend! You can find similar solution from for example [**GeeksforGeeks**](https://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/).</Note>
+<Note>For this exercise, google is definately your friend! You can find similar solution from for example <a href="https://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/" target="_blank">GeeksForGeeks</a>.</Note>
 
 </Exercise>
 
