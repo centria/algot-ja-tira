@@ -299,7 +299,7 @@ When we want to find the smallest object, we start from the root and move to the
 
 ## Next larger / Previous smaller
 
-When we want to find the smallest object which is larger than *x*, we start from the tree. When we are at a node *a*, we go to the left child, if *a > x* and to the right child, if *a <= x*. We continue this, until we cannot go further. The last object is the smallest object greater than *x* of all the objects we traversed through. When we want to find the largest object, which is smaller than *x*, we do the opposite in our operations.
+When we want to find the smallest object which is larger than *x*, we start from the root. When we are at a node *a*, we go to the left child, if *a > x* and to the right child, if *a <= x*. We continue this, until we cannot go further. The last object is the smallest object greater than *x* of all the objects we traversed through. When we want to find the largest object, which is smaller than *x*, we do the opposite in our operations.
 
 ## Removing a node
 
