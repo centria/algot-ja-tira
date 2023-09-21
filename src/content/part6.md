@@ -112,10 +112,10 @@ We can think of this matter from another perspective: If the distance could be s
 So the Dijkstra algorithm works correctly, if there are no negative edges in the graph, but how fast is it? First the algorithm goes through the edges and nodes of the graph, taking *O(m + n)* time. The main part of the algorithm goes through the set of all the nodes in *O(n)*, and for each node *n* a maximum of *O(m)* edges, creating a time complexity of *O(m^2)*. As we know, this is not very fast. If we use an adjacency list as our data structure rather than an array, we can optimize our solution up to *O(n + m log n)*.
 
 
-There is another way to do create the algorithm, and that is with a *priority queue* (also known as *heap*). Unfortunately, that has not been implemented in dotnet 5.0. 
+There is another way to do create the algorithm, and that is with a *priority queue* (also known as *heap*).
 
 <Note>
-Priority queue or heap is in dotnet 6.0 but not in time for this course, as the course exercises still use dotnet 5.0.
+Priority queue or heap is in dotnet 6.0 but not older ones, hence we have been using the other version in the material mostly.
 </Note> 
 
 Let's look at that as well:
