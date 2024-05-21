@@ -1,5 +1,5 @@
 ---
-title: 'lle osallistuminen'
+title: 'Opintojaksolle osallistuminen'
 nav_order: 1
 hidden: false
 ---
