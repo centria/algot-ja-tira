@@ -67,5 +67,5 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
   ],
-  pathPrefix: '/algo-and-data',
+  pathPrefix: '/algot-ja-tira',
 }

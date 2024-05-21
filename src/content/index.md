@@ -50,4 +50,4 @@ At the end of the course, there is also an exam with **pass / fail** grading. Th
 
 ## Errors in the material?
 
-Did you find an error? A typo perhaps? Please make a pull request at [GitHub](https://github.com/centria/algo-and-data/tree/master/src/content) and help us make the material better!
+Did you find an error? A typo perhaps? Please make a pull request at [GitHub](https://github.com/centria/algot-ja-tira/tree/master/src/content) and help us make the material better!

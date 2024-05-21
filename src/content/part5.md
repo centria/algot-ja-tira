@@ -13,42 +13,42 @@ We can solve many algorithmic problems by representing the problem as a *graph* 
 
 We say that two nodes are *adjacent*, if there is an edge between them. The *neighbors* of a node are the nodes which are connected with an edge, and the *degree* of a node is the amount of neighbors. In our example, the node *2* has neighbors *1*, *4* and *5*, so its degree is 3.
 
-![Graph 1](https://github.com/centria/algo-and-data/raw/master/src/images/materials/graph1.png)  
+![Graph 1](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/graph1.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 A *path* in a graph is a sequence going along the edges from the starting node to the target node. Below we can see two possible paths from node *1* to node *5* in our example graph. The first path is 1 &#8594; 2 &#8594; 5 and another path is 1 &#8594; 3 &#8594; 4 &#8594; 5.
 
-![Graph 2](https://github.com/centria/algo-and-data/raw/master/src/images/materials/graph2.png)  
+![Graph 2](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/graph2.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 
 A path is a *cycle*, if the starting and the ending nodes are the same, it has at least one edge and it does not go through the same node or edge more than once. Beloe we have an example cycle 2 &#8594; 4 &#8594; 5 &#8594; 2. If there are no cycles in a graph, we call it *acyclic*.
 
-![Graph 3](https://github.com/centria/algo-and-data/raw/master/src/images/materials/graph3.png)  
+![Graph 3](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/graph3.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 
 A graph is *connected*, if it has at least one node, and there is an edge between every pair of nodes. For example, the graph above is connected, but the graph below is not, as for example there is no edge between nodes *1* and *2*.
 
-![Graph 4](https://github.com/centria/algo-and-data/raw/master/src/images/materials/graph4.png)  
+![Graph 4](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/graph4.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 A graph can always be presented as a set of *connected components*. Above, the connected components are {1,3} and {2,4,5}. A node with not incident edges is itself a component. A graph that is itself connected has exactly one component, consisting the whole graph.
 
 A graph is a *tree*, if it is both connected and acyclic, like below. In a tree, the amount of edges is always one less than the amount of nodes, and there is a *simple edge* between each pair of nodes.
 
-![Graph 5](https://github.com/centria/algo-and-data/raw/master/src/images/materials/graph5.png)  
+![Graph 5](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/graph5.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 
 In a *directed* graph each edge has a direction, along which we have to travense in the graph. The directions restrict our travel in the graph. Below is an example of a directed graph, where we can go from node *1* to node *5* with path 1 &#8594; 2 &#8594; 5, but there is no way to travel from node *5* to node *1*.
 
-![Graph 6](https://github.com/centria/algo-and-data/raw/master/src/images/materials/graph6.png)  
+![Graph 6](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/graph6.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In a *weighted* graph each edge has an associated weight, which typically represents the length of the edge. As we traverse a path in a weighted graph, the length of the path is the sum of the edges.
 
-![Graph 7](https://github.com/centria/algo-and-data/raw/master/src/images/materials/graph7.png)  
+![Graph 7](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/graph7.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In the example above, the path 1 &#8594; 2 &#8594; 5 has a weight of *5 + 8 = 13*, and path 1 &#8594; 3 &#8594; 4 &#8594; 5 has a weight of *2 + 4 + 3 = 9*.
@@ -61,7 +61,7 @@ There are several ways to represent a graph in programming. Choosing the proper 
 
 One common way to represent a graph is to create an *adjacency list* for each node. The list tells, into which nodes we can traverse along with nodes. In the picture below is a graph and the adjacency list representation. 
 
-![Graph 8](https://github.com/centria/algo-and-data/raw/master/src/images/materials/graph8.png)  
+![Graph 8](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/graph8.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 If we want to create an adjacency list in C# we can create an array of Lists
@@ -141,7 +141,7 @@ Edge list is a good representation for algorithms, where we want to go through a
 
 ## Adjacency matrix
 
-![Graph 9](https://github.com/centria/algo-and-data/raw/master/src/images/materials/graph9.png)  
+![Graph 9](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/graph9.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 
@@ -178,7 +178,7 @@ Next we will get to know two essential algorithms, which traverse the nodes and 
 
 The DFS maintains information about each node, if they have been visited or not. When the search reaches a node it has not visited yet, it marks the node visited and begins to traverse the edges beginning from said node. With each edge the search advances to the parts of a graph, which are accessible via an edge. Once the search has gone through all the edges, it backs away the same route from whence it came to the edge.
 
-![DFS](https://github.com/centria/algo-and-data/raw/master/src/images/materials/dfs.png)  
+![DFS](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/dfs.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In the picture above you can see an example of depth-first search in action. With each step, gray nodes are where the search has visited. In this example, the search starts from node *1*, from which it can access nodes *2* and *3*. The search will advance to node *2* first, from which it can again get to nodes *4* and *5*. After this the search does not find more edges from this part of the graph, so it will back away the same route, back to node *1*. The search will continue to node *3*, from which it cannot access more nodes. Now the search has visited all the nodes, it can acess from node *1*.
@@ -216,7 +216,7 @@ If an undirected graph contains a *cycle*, we notice this with DFS, if we come t
 
 Even though we could use BFS as a general tool for traversing a graph like DFS, we usually use it when we are interested in the *shortest paths*. With breath-first search we determine the length of the shortest path, or the *distance* from the rootnode to each node we encounter during the search. In this example, we assume that the length of the path is determined by the amount of edges, i.e. the shortest path is the one with least edges along the way.
 
-![BFS](https://github.com/centria/algo-and-data/raw/master/src/images/materials/bfs.png)  
+![BFS](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/bfs.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 Above you can see an example of BFS in action, when we start our search from node *1*. First we handle node *1*, from which we can access nodes *2* and *3*. This means, that the shortest paths to nodes *2* and *3* are 1 &#8594; 2 and 1 &#8594; 3, and the distance to these nodes is 1. Then we handle the node *2*, from which we can access new nodes, *4* and 5*. This leads to shortest paths to *4* and 5* being 1 &#8594; 2 &#8594; 4 and 1 &#8594; 2 &#8594; 5, and the distance to these nodes is 2. Finally, we handle nodes 3, 4 and 5 in this order, from which we cannot access any more nodes.
@@ -247,7 +247,7 @@ We are in a labyrinth and we want to get from square *A* to square *B*. With eac
 
 We can illustrate the problem as a graph, so that each floor square is a node in our graph and there is an edge between two nodes, if they are next to each other in the labyrinth. In the example below, the shortest path from *A* to *B* is formed with 9 steps. The left side illustrates the labyrinth, and the right side the same situation as a graph.
 
-![Labyrinth](https://github.com/centria/algo-and-data/raw/master/src/images/materials/labyrinth.png)  
+![Labyrinth](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/labyrinth.png)  
 source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 Using this illustration, there is a path from *A* to *B* exactly when the nodes of the corresponding graph are a part of the same component. We can check with DFS, if there is a path from *A* to *B*. The shortest path from *A* to *B* can be found with *BFS*, which starts from *A*.
