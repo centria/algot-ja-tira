@@ -1,5 +1,5 @@
 ---
-title: "List and Trees"
+title: "Listat ja puut"
 nav_order: 5
 hidden: false
 ---

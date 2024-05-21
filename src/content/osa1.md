@@ -1,5 +1,5 @@
 ---
-title: 'Basic algorithms'
+title: 'Algoritmien perusteet'
 nav_order: 2
 hidden: false
 ---

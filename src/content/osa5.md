@@ -1,5 +1,5 @@
 ---
-title: "Graphs"
+title: "Verkot"
 nav_order: 6
 hidden: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'Recursion and Sorting'
+title: 'Rekursio ja järjestäminen'
 nav_order: 4
 hidden: false
 ---

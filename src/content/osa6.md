@@ -1,5 +1,5 @@
 ---
-title: "Shortest paths"
+title: "Lyhimmät polut"
 nav_order: 7
 hidden: false
 ---
