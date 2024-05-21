@@ -4,10 +4,10 @@ nav_order: 999
 hidden: true
 ---
 
-The course material relies heavily on the **Tietorakenteet ja algoritmit** book (only available in Finnish), by Antti Laaksonen. The book is available here: [**https://www.cs.helsinki.fi/u/ahslaaks/tirakirja/**](https://www.cs.helsinki.fi/u/ahslaaks/tirakirja/). This course uses the spring 2020 edition. The book is used in University of Helsinki's course: [**https://tira-s19.mooc.fi/**](https://tira-s19.mooc.fi/), which is also an inspiration to this course.
+Tämä opintojakso perustuu Antti Laaksosen kirjaan **Tietorakenteet ja algoritmit**. Kirja on saatavilla: [**https://www.cs.helsinki.fi/u/ahslaaks/tirakirja/**](https://www.cs.helsinki.fi/u/ahslaaks/tirakirja/). Tällä opintojaksolla käytetään kevään 2020 versiota. Kirjaa käytetään myös Helsingin yliopiston kurssilla: [**https://tira-s19.mooc.fi/**](https://tira-s19.mooc.fi/), joka on myös tämän opintojakson inspiraatio.
 
-This material has been adapted from the said material by [**Heikki Ahonen**](https://github.com/heikkihei); the adaptation is licensed using [**CC BY-NC-SA 4.0**](https://creativecommons.org/licenses/by-nc-sa/4.0/deed). More information about the original material and its license can be found [**here**](https://tira-s19.mooc.fi/credits).
+Tämän materiaalin on muokannut kyseisestä materiaalista  [**Heikki Ahonen**](https://github.com/heikkihei); tämän lisenssi on [**CC BY-NC-SA 4.0**](https://creativecommons.org/licenses/by-nc-sa/4.0/deed). Lisätietoa alkuperäisestä materiaalista ja sen lisenssistä [**täällä**](https://tira-s19.mooc.fi/credits).
 
-## Errors in the material?
+## Virheitä materiaalissa?
 
-Did you find an error? A typo perhaps? Please make a pull request at [GitHub](https://github.com/centria/algot-ja-tira/tree/master/src/content) and help us make the material better!
+Löysitkö virheen tiedoissa? Tai kirjoitusvirheen? Lähetä meille parannusehdotus [GitHubissa](https://github.com/centria/algot-ja-tira/tree/master/src/content) ja auta meitä parantamaan materiaalia!
