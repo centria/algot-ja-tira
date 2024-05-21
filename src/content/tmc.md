@@ -1,122 +1,104 @@
 ---
-title: 'TMC Instructions'
+title: 'TMC-Ohjeet'
 nav_order: 9999
 hidden: false
 ---
 
-# Prerequisits for the course
+# Esivaatimukset
 
+<Note>Syksyllä käytössä on dotnet8.0!</Note>
 
-To do the exercises for this course, you need to install a few software to your computer.
+Voidaksesi tehdä tehtävät, sinun tulee asentaa muutama ohjelmisto koneellesi, sekä luoda käyttäjätunnus MOOC.fi -palveluun.
 
 ## .NET
-You need to have `.NET` (also called `Dotnet`) installed. You can install it from here: [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download). 
+Sinulla tarvitsee olla `.NET` (kutsutaan myös nimellä `Dotnet`) asennettuna. Voit asentaa sen täältä: [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download). 
 
-<Note>Dotnet 5.0 has met its End of Life. Course with dotnet 6.0 online now!</Note>
+<Note>Käytössä on dotnet 6.0, mutta sen tuki loppuu kesällä. Vanhemmat versiot eivät toimi!</Note>
 
-## Visual Studio Code
+## Visual Studio Code (VSCode)
 
-The editor used during this course is `Visual Studio Code`. You can find the instructions from example here: [https://www.mooc.fi/en/installation/vscode/#installing-vscode](https://www.mooc.fi/en/installation/vscode/#installing-vscode) or the direct installation link from here: [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+Käytämme `Visual Studio Code` -tekstieditoria. Löydät ohjeet esimerkiksi [täältä](https://www.mooc.fi/installation/vscode/#VSCoden-asentaminen) tai suoran asennuslinkin [tästä](https://code.visualstudio.com/download)
 
-## C# and TMC Plugin
+## C# ja TMC Plugin
 
-Once you have installed the Visual Studio Code, you need to install `Test My Code` or `TMC` plugin to it. You can find the instructions from here: [https://www.mooc.fi/en/installation/vscode/#installing-tmc](https://www.mooc.fi/en/installation/vscode/#installing-tmc)
+Kun olet asentanut VSCoden, sinun tulee asentaa `Test My Code` eli `TMC` -laajennuksen siihen. Ohjeet löydät [täältä](https://www.mooc.fi/installation/vscode/#TestMyCode-asentaminen)
 
-You also need the `C#` plugin: [https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+Tarvitset myös `C#` -laajennuksen: [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 
 
-# How to do the exercises
+# Kuinka tehtäviä tehdään
 
-## Registering to the course
+## Rekisteröityminen MOOC.fi -palveluun
 
-Once you have everything installed, you need to download the exercises to your computer. To do that, you need to have a `MOOC.fi account`. You can read the instructions from here: [https://www.mooc.fi/en/installation/vscode/#mooc.fi-create-account](https://www.mooc.fi/en/installation/vscode/#mooc.fi-create-account). Follow the instructions to `login`.
+Asennettuasi kaiken tarvittavan, sinun tulee ladata tehtävät koneellesi. Sitä varten tarvitset `MOOC.fi tilin`. Voit lukea ohjeet [täältä](https://www.mooc.fi/installation/vscode/#mooc.fi-tunnuksen-luominen). Seuraa ohjeita vaiheeseen `Kirjautuminen ohjelmointiympäristöön` asti.
 
 <Note>
-Register with your university (or school) email, if you have one!
-Also, register with same email to TMC and to Open University, if you want credits!
+Rekisteröidy korkeakoulun (tai koulun) sähköpostiosoitteella, jos sinulla on sellainen!
+
+Rekisteröidy samalla sähköpostiosoitteella sekä MOOC.fi -palveluun, että avoimeen ammattikorkeakouluun, jos haluat opintopisteitä!
 </Note>
 
-### Centria students
+### Centrian opiskelijat (lukukauden aikana)
 
-When you have the account, follow the instructions for:
-- Selecting your organization: *Centria University of Applied Sciences*
-- Selecting your course according to time of attendance, for example *Basics of Programming in C# Fall 1*
-    - The correct course name can also be found from Itslearning.
+Kun sinulla on tili luotuna, valitse VSCodessa oikea organisaatio ja kurssi:
+- Organisaation valinta: *Centria University of Applied Sciences*
+- Oikea kurssi riippuu toteutuksesta, jolla olet, kuten *Algorithms and Data Structures with C# Fall XX* tai *Algorithms and Data Structures with C# Spring XX*, missä XX on lukukausi.
+    - Oikea nimi löytyy myös Itslearningista.
 
+### Avoin yliopisto ja vapaa oppiminen
 
-When you have the account, follow the instructions for:
-- Selecting your organization: *Centria University of Applied Sciences*
-- Selecting your course: *Algorithms and Data Structures with C# Open University*
+Kun sinulla on tili luotuna, valitse VSCodessa oikea organisaatio ja kurssi:
+- Organisaation valinta: *Centria University of Applied Sciences*
+- Kurssin valinta: *OPEN XX-XX Algorithms and Data Structures with C#* missä XX-XX on lukuvuosi.
+
 
 ## Doing the exercises
 
-You can find the exercises for each part at the end of each chapter. In some chapters, there might be no exercises.
+## Tehtävien tekeminen
 
-You can follow these instructions (to a point) on how to submit exercises: 
-[https://www.mooc.fi/en/installation/vscode/#first-programming-exercise](https://www.mooc.fi/en/installation/vscode/#first-programming-exercise)
+Löydät jokaisen osion tehtävät aina luvun lopusta. Kaikissa luvuissa ei ole tehtäviä.
+
+Voit seurata [näitä ohjeita](https://www.mooc.fi/installation/vscode/#ensimm%C3%A4isen-teht%C3%A4v%C3%A4n-tekeminen) (tiettyyn pisteeseen asti) tehtävien tekemiseen.
 
 <Note>
-At this point, you might encounter a bug, and the exercises do not show up.
+Tässä kohtaa voit törmätä bugiin (virheeseen), ja tehtävät eivät tule näkyviin.
 
-In this case, you have to choose again the Extensions menu, select the TMC extension, and enable it.
+Tässä tapauksessa, valitse uudelleen Extensions-valikosta TMC-laajennus, ja ota se käyttöön (Enable).
 
-After enabling, VSCode will ask if you trust the extension and the files, say YES to both questions.
+Tämän jälkeen VSCode kysyy, luotatko laajennukseen ja tiedostoihin, vastaa molempiin KYLLÄ (YES).
 </Note>
 
 
-## Running the exercises
-
 <Note>
-The part of "Running the source code" does not unfortunately work yet.
+Valitettavasti osuus "Lähdekoodin ajaminen" ei toimi vielä C#:lla
 
-We have to run our exercises manually, if we want to do so.
+Meidän täytyy ajaa tehtävät manuaalisesti, jos haluamme niin tehdä.
 </Note>
 
-In Visual Studio Code, select `Terminal` and then `New Terminal`
-
-![Terminal menu](https://github.com/centria/algot-ja-tira/raw/master/src/images/new-terminal.png)
-
-A selection of options will pop up. The selections contain all the open exercises. In the example, I am doing part 6 of another course, so I have those open.
-
-![Folder selection](https://github.com/centria/algot-ja-tira/raw/master/src/images/select-folder.png)
-
-* Select the exercise you are doing
-* A new terminal opens at the bottom of Visual Studio Code.
-
-* write the command `cd src/Exercise000` , but instead of the zeros, use the actual exercise number. Press `Enter`.
-
-![Selecting source folder](https://github.com/centria/algot-ja-tira/raw/master/src/images/exercise003.png)
-
-* In the example, I am doing exercise 003 of the part, so my command is `cd src/Exercise003`
-* Now you are in the actual exercise folder, and can run the program.
-* Run the program with the command `dotnet run`. 
+Visual Studio Codessa,
+* Klikkaa **oikealla hiiren napilla** tiedostoa `Program.cs` ja valitse `Open in integrated terminal`.
+* Aja ohjelma kirjoittamalla `dotnet run` auenneelle komentoriville ja paina `Enter`.
 
 ![Dotnet run](https://github.com/centria/algot-ja-tira/raw/master/src/images/dotnet-run.png)
 
-* If your program works as it should, you can see the output in the console. The next example is from Part 6, exercise 003 of the example course:
 
-![Dotnet run](https://github.com/centria/algot-ja-tira/raw/master/src/images/dotnet-print.png)
+<Note>
+Dollarin merkki kuvissa EI ole osa komentoa!
+</Note>
 
-<Note>The dollar sign in the pictures is NOT part of the command! </Note>
 
-### Alternative way
+## Tehtävien testaaminen
 
-In Visual Studio Code,
-* Click on the exerice folder with right mouse button, and choose `Open in integrated terminal`.
-* Run the program with the command `dotnet run`.
+[Seuraa näitä ohjeita](https://www.mooc.fi/installation/vscode/#l%C3%A4hdekoodin-testaaminen)
 
-## Testing your exercises
+## Tehtävien lähettäminen palvelimelle
 
-Follow the instructions here: [https://www.mooc.fi/en/installation/vscode/#test-source-code](https://www.mooc.fi/en/installation/vscode/#test-source-code)
+Vain lähettämällä tehtävät palvelimelle, tehtävistä saa pisteitä, ja kurssilla pääsee etenemään. [Seuraa näitä ohjeita](https://www.mooc.fi/installation/vscode/#teht%C3%A4v%C3%A4n-l%C3%A4hett%C3%A4minen-palvelimelle).
 
-## Submitting your exercises
+## Pistetilanteen tarkistaminen
 
-Follow the instructions here: [https://www.mooc.fi/en/installation/vscode/#submit-solution](https://www.mooc.fi/en/installation/vscode/#submit-solution)
+Voit tarkastaa oman pistetilanteesi kirjautumalla osoitteessa [https://tmc.mooc.fi](tmc.mooc.fi) olevaan verkkopalveluun. Verkkopalveluun kirjaudutaan MOOC.fi-tunnuksilla.
 
-## Checking your points
+## Virheitä materiaalissa?
 
-Follow the instructions here: [https://www.mooc.fi/en/installation/vscode/#check-your-points](https://www.mooc.fi/en/installation/vscode/#check-your-points)
-
-## Errors in the material?
-
-Did you find an error? A typo perhaps? Please make a pull request at [GitHub](https://github.com/centria/algot-ja-tira/tree/master/src/content) and help us make the material better!
+Löysitkö virheen tiedoissa? Tai kirjoitusvirheen? Lähetä meille parannusehdotus [GitHubissa](https://github.com/centria/algot-ja-tira/tree/master/src/content) ja auta meitä parantamaan materiaalia!

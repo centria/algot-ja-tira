@@ -56,4 +56,4 @@ Lue <Link style={{color: "#ef5b5b"}} to='/tehtavat'>Tehtävä- ja koeohjeet.</Li
 
 ## Virheitä materiaalissa?
 
-Löysitkö virheen tiedoissa? Tai kirjoitusvirheen? Lähetä meille parannusehdotus [GitHubissa](https://github.com/centria/ohjelmoinnin-perusteet/tree/master/src/content) ja auta meitä parantamaan materiaalia!
+Löysitkö virheen tiedoissa? Tai kirjoitusvirheen? Lähetä meille parannusehdotus [GitHubissa](https://github.com/centria/algot-ja-tira/tree/master/src/content) ja auta meitä parantamaan materiaalia!
