@@ -4,17 +4,17 @@ nav_order: 99
 hidden: false
 ---
 
-Kurssi on jaettu kuuteen osaan, joista jokainen sisältää tehtäviä. Kurssin läpäistäkseen, opiskelijan tulee saada vähintään 50% tehtäväpisteistä. 
+Opintojakso on jaettu kuuteen osaan, joista jokainen sisältää tehtäviä. Opintojakson läpäistäkseen, opiskelijan tulee saada vähintään 50% tehtäväpisteistä. 
 
-Opintopisteitä varten myös tentti tulee läpäistä kurssin päätteeksi.
+Opintopisteitä varten myös tentti tulee läpäistä opintojakson päätteeksi.
 
 ## Deadlinet
 
-Kurssilla on joko viikoittaiset tai yksi lopullinen deadline, riippuen kurssin toteutuksesta. Deadlinet ovat automaattisia ja tiukkoja. Deadlinen tiedot löydät TMC:stä ja/tai Itslearningista.
+Opintojaksolla on joko viikoittaiset tai yksi lopullinen deadline, riippuen opintojakson toteutuksesta. Deadlinet ovat automaattisia ja tiukkoja. Deadlinen tiedot löydät TMC:stä ja/tai Itslearningista.
 
-## Kurssilla eteneminen
+## Opintojaksolla eteneminen
 
-Kurssin alussa, vain Osan 1 tehtävät ovat saatavilla opiskelijalle. Seuraavan osion saa auki aina kerryttämällä tarpeeksi tehtäväpisteitä osiosta. Edetäksesi seuraavaan osioon, sinun tulee saada 40% tehtäväpisteistä. Kun tämä on saavutettu, seuraava osio aukeaa automaattisesti.
+Opintojakson alussa, vain Osan 1 tehtävät ovat saatavilla opiskelijalle. Seuraavan osion saa auki aina kerryttämällä tarpeeksi tehtäväpisteitä osiosta. Edetäksesi seuraavaan osioon, sinun tulee saada 40% tehtäväpisteistä. Kun tämä on saavutettu, seuraava osio aukeaa automaattisesti.
 
 ## Tehtävien palauttaminen
 

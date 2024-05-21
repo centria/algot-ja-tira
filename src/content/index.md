@@ -1,5 +1,5 @@
 ---
-title: 'Kurssille osallistuminen'
+title: 'lle osallistuminen'
 nav_order: 1
 hidden: false
 ---
@@ -36,7 +36,7 @@ Alla oleva lista ei kata kaikkea, mutta on enemmänkin ohjeellinen, mitä odotta
 | 5| Ymmärrät *verkko* -tietorakenteen perusteet ja osaat etsiä niitä *DFS* ja *BFS* -algoritmeilla. |
 | 6| Tunnet Bellman-Fordin, Djikstran ja Floyd-Warshallin algoritmit ja ymmärrät niiden perusperiaatteet. |
 
-Kurssi arvostellaan asteikolla 0-5. Arvosana määräytyy saavutettujen tehtäväpisteiden määrän perusteella.
+Opintojakso arvostellaan asteikolla 0-5. Arvosana määräytyy saavutettujen tehtäväpisteiden määrän perusteella.
 
 | Prosenttia pisteistä | Arvosana |
 | :-------------- | :---: |
@@ -47,7 +47,7 @@ Kurssi arvostellaan asteikolla 0-5. Arvosana määräytyy saavutettujen tehtäv�
 | 50 % - 59,99 %  |   1   |
 | Alle 50 %  |   0   |
 
-Lisäksi kurssin lopussa on koe, joka arvostellaan **hyväksytty / hylätty**. Tämä ei vaikuta arvosanaan, vaan tarkoituksena on varmistaa että olet tehnyt tehtävät itse. Koe on varattu Centria-ammattikorkeakoulun ja Centrian avoimen ammattikorkeakoulun opiskelijoille, ja rekisteröitymisohjeet löydät ylempää. Kurssin materiaali ja tehtävät ovat silti kaikkien saatavilla.
+Lisäksi opintojakson lopussa on koe, joka arvostellaan **hyväksytty / hylätty**. Tämä ei vaikuta arvosanaan, vaan tarkoituksena on varmistaa että olet tehnyt tehtävät itse. Koe on varattu Centria-ammattikorkeakoulun ja Centrian avoimen ammattikorkeakoulun opiskelijoille, ja rekisteröitymisohjeet löydät ylempää. Opintojakson materiaali ja tehtävät ovat silti kaikkien saatavilla.
 
 
 ## Mitä seuraavaksi

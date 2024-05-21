@@ -40,16 +40,16 @@ Rekisteröidy samalla sähköpostiosoitteella sekä MOOC.fi -palveluun, että av
 
 ### Centrian opiskelijat (lukukauden aikana)
 
-Kun sinulla on tili luotuna, valitse VSCodessa oikea organisaatio ja kurssi:
+Kun sinulla on tili luotuna, valitse VSCodessa oikea organisaatio ja opintojakso:
 - Organisaation valinta: *Centria University of Applied Sciences*
-- Oikea kurssi riippuu toteutuksesta, jolla olet, kuten *Algorithms and Data Structures with C# Fall XX* tai *Algorithms and Data Structures with C# Spring XX*, missä XX on lukukausi.
+- Oikea opintojakso riippuu toteutuksesta, jolla olet, kuten *Algorithms and Data Structures with C# Fall XX* tai *Algorithms and Data Structures with C# Spring XX*, missä XX on lukukausi.
     - Oikea nimi löytyy myös Itslearningista.
 
 ### Avoin yliopisto ja vapaa oppiminen
 
-Kun sinulla on tili luotuna, valitse VSCodessa oikea organisaatio ja kurssi:
+Kun sinulla on tili luotuna, valitse VSCodessa oikea organisaatio ja opintojakso:
 - Organisaation valinta: *Centria University of Applied Sciences*
-- Kurssin valinta: *OPEN XX-XX Algorithms and Data Structures with C#* missä XX-XX on lukuvuosi.
+- Opintojakson valinta: *OPEN XX-XX Algorithms and Data Structures with C#* missä XX-XX on lukuvuosi.
 
 
 ## Doing the exercises
@@ -93,7 +93,7 @@ Dollarin merkki kuvissa EI ole osa komentoa!
 
 ## Tehtävien lähettäminen palvelimelle
 
-Vain lähettämällä tehtävät palvelimelle, tehtävistä saa pisteitä, ja kurssilla pääsee etenemään. [Seuraa näitä ohjeita](https://www.mooc.fi/installation/vscode/#teht%C3%A4v%C3%A4n-l%C3%A4hett%C3%A4minen-palvelimelle).
+Vain lähettämällä tehtävät palvelimelle, tehtävistä saa pisteitä, ja opintojaksolla pääsee etenemään. [Seuraa näitä ohjeita](https://www.mooc.fi/installation/vscode/#teht%C3%A4v%C3%A4n-l%C3%A4hett%C3%A4minen-palvelimelle).
 
 ## Pistetilanteen tarkistaminen
 
