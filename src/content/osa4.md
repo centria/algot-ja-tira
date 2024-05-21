@@ -24,12 +24,12 @@ In this part, we will be looking at two different lists, an *array list* and a *
 Let's first look into an array list, where both the additions and removals are done at the end. We will store the list as an array, so that a certain amount of elements from the beginning of the array are in use, and the rest are reserved for additional elements. For this, we can add a new element in *O(1)* time, if there is space, as all we have to do is use the next free place from the array capacity.
 
 ![ArrayList Add 1](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/arraylist1.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 Above, we have the list **\[3,7,2,5\]** stored in an array, and we add 6 to the end. We will use one of the free capacity places from the array. This is an *O(1)* operation.
 
 ![ArrayList Add 2](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/arraylist2.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 Above, we have the list **\[3,7,2,5,6,1,2,8\]** and want to add one more. We cannot fit anymore, so we have to increase the capacity by creating a new, larger array, and copy the information from the original there. This takes *O(n)*, because we have to go through the process of copying the whole array, before we can add the new element.
 
@@ -40,7 +40,7 @@ Why is it *O(1)* on average? Let's see a situation, where the list has *n* eleme
 We can remove an element from the end always in *O(1)* time, as this does not require increase in capacity. This can lead to a situation, where after several removals there is too much capacity in the array, taking memory space. We can use the same idea as with addition: if after removal there's only one *quarter* of the array in use, *halve* the array capacity. This way we can keep our removal also *on average* at *O(1)*.
 
 ![ArrayList Remove](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/arraylist3.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 Why not reserve the whole capacity in the beginning? This would end up reserving quite a lot of memory. An algorithm could be handling multiple lists at a time, and we want to have the lists in the same scale as the amount of content in the list.
 
@@ -49,14 +49,14 @@ Why not reserve the whole capacity in the beginning? This would end up reserving
 Quite similarly we could create an array list, which allows efficient element removal both from the beginning and the end of the list. To achieve this, we will have to change the recording method of the list so, that it can start and end anywhere in the array, and the content of the list can continue from the end of the array to the beginning, if needed.
 
 ![ArrayList Another](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/arraylist4.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 The image shows an example of the new way of saving our list. The arrow to the right shows the beginning of the list, and the arrow to the left points at the end of the list. When we want to add an element to the beginning, we move left from the right-pointing arrow, and when we want to add to the the end, we move right from the left-pointing arrow. We do the reverse, when we want to remove an element from the list.
 
 If the arrows would be next to each other in this arrangement, it can mean two things: The list is either empty, or all of the capacity is in use:
 
 ![ArrayList Another Full](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/arraylist5.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 As we keep track of the amount of elements in our list, we can determine, which of the situations is at hand. If the array is full and we want to add another element, we once again need to reserve a larger array and transfer the content of the array. We can do this similarly as in the previous version and for example double the capacity, giving us *on average* an operation time of *O(1)*.
 
@@ -65,7 +65,7 @@ As we keep track of the amount of elements in our list, we can determine, which 
 *Linked list* comprises of *nodes*, which each contain one element of the list. A linked list can be linked to one direction or both directions, i.e. *singly linked list* or a *doubly linked list*. In a singly linked list, each node has a reference to the next one, and in doubly linked list, a node has a reference to both the next and the previous one.
 
 ![Linked list 1](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/linkedlist1.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 The image above shows the example list **\[3,7,2,5\]** as singly and doubly linked. In both cases we have the reference information for the *head* (the beginning) and the *tail* (the end). In a singly linked list we can iterate the list from the beginning to the end, whereas in a doubly linked list, we can go both ways.
 
@@ -134,7 +134,7 @@ There are a multitude of linked lists, as you can find out from [**Wikipedia**](
 The advantage of a linked list is that we can add and remove elements in *O(1)* time from any point of the list. When we want to add an element to the list, we first create a new node and change the references of the neighbouring nodes so, that they reference to the new node. Similarly, if we want to remove a node, we change the references, so that the node is skipped.
 
 ![Linked list 2](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/linkedlist2.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 The image illustrates an example of the usage of a linked list. We start with a list of  **\[3,7,2,5\]**. Then we add the element 4 to the middle, for which we first create a node and then change the references from the elements 7 and 2 so, that 4 comes between them. After this we remove the element 2, so we combine the elements 4 and 5 to each other.
 
@@ -153,14 +153,14 @@ A binary tree is made out of *n* nodes. At the top of the tree is a node, which 
 The structure of a binary tree is recursive: Each node works as a root for a *subtree*, which is also a binary tree. The subtree of a node *x* contains the node *x* itself, and all the nodes we can access by going downwards from said node. We can also think that every child of a node is (a possibly empty) binary tree.
 
 ![Binary tree 1](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/binarytree1.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In the picture above we have a binary tree with 8 nodes. Node 1 is the root, and nodes 4, 5, 6 and 8 are its leafs. Node 3's left child is 5, right child is 6, and parent is 1. The subtree of node 3 contains nodes 3, 5, 6, 7 and 8.
 
 The *depth* of the root of the binary tree is *0* and the depth of all the other nodes is one greater than that of their parent. The *height* of a binary tree is the greatest depth in the tree, or the greatest amount of steps from the root to the lowest leaf. In our picture above, the height is 3, as the depth of nodes 7 and 8 is 3.
 
 ![Binary tree 2](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/binarytree2.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 If the height of the binary tree is *h*, it has at least *h+1* nodes, when it is just a list of nodes, and at most *2^(h+1) -1* nodes, when all the levels have all the possible nodes. The picture above shows these examples, when the height is *2*.
 
@@ -201,7 +201,7 @@ We can go through the nodes of a binary tree from the root recursively. There ar
 
 
 ![Binary tree 1](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/binarytree1.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In the example we used already above, we have a *pre-order* of **\[1,2,4,3,5,6,7,8\]**, *in-order* of **\[4,2,1,5,3,7,6,8\]** and *post-order* of **\[4,2,5,7,8,6,3,1\]**. We can traverse all the nodes of a binary tree in these orders using recursion. For example, the following method prints the nodes of the tree with *in-order*, when given the root as a parameter:
 
@@ -242,7 +242,7 @@ printNode(node):
 ## Binary search tree
 
 ![Binary search tree 1](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/bst1.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 *Binary search tree* is a binary tree, where each node represents an objects in a set. The nodes are ordered in such a manner, that for each node, all the nodes in the left subtree are smaller than the node itself, and similarly on the right side, all the nodes in the subtree are of greater value. Because of this, we can easily find a ndoe from the tree by beginning our search from the root.
 
@@ -257,7 +257,7 @@ Next we shall look into the operations for handling nodes in a binary search tre
 When we want to search the object *x* from our set, we start from the root of the tree and go downwards. When where are at the node *a*, there are three options. If *a = x*, we have found the object we were looking for. If *a > x*, we continue our search to the left child, an similarly if *a < x*, we continue to the right child. If the node does not have a child where we should move to, we can conlcude the set does not contain the object *x*.
 
 ![Binary search tree 2](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/bst2.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 
 The picture above shows, how we can find the object *7* from the set **{2,3,5,7,8,9}**. The root is at *5*, so the 7 has to be on the right subtree. This subtree has its root at 8, so now we know that 7 has to be to the left of 8, where it indeed can be found.
@@ -267,7 +267,7 @@ The picture above shows, how we can find the object *7* from the set **{2,3,5,7,
 When we want to add an object *x* to the set, we first want to search for x to see it does not exist already. When we then get to a node which does not have a child in the corresponding location where we should be moving to, we create a new node for *x* and add it to the location as a child.
 
 ![Binary search tree 3](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/bst3.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In the picture above we are adding *4* to the set of **{2,3,5,7,8,9}**. We first search for 4 in the tree and end up in node with object value of 3, and has no right child. Thus we create a new node for 4, and set is as the right child of 3.
 
@@ -306,7 +306,7 @@ When we want to find the smallest object which is larger than *x*, we start from
 If we want to remove the object *x* from our set, we first have to find the node of *x* as usual. If the node does not have children or only has one child, it is easy just to remove the node and keep the structure of the tree otherwise intact. If, however, the node has two children, it gets more complicated. This time we need to find object *y*, which is the smallest node of those larger than *x*, and swap *x* and *y* in the tree. After this we can easily remove the node where object *x* now resides, as it cannot have two children (if the node would have a left child, *y* would not be the smallest node greater than *x*).
 
 ![Binary search tree 4](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/bst4.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In the picture above we remove 5 from the set **{2,3,5,7,8,9}**. The node is at the root of the tree and has two children, so we have to look for the smallest object greater than 5, which is 7. Then we swap together the values 5 and 7, after which we can remove the 5 with ease.
 
@@ -315,7 +315,7 @@ In the picture above we remove 5 from the set **{2,3,5,7,8,9}**. The node is at 
 The operations for binary search tree take *O(h)* time, where *h* is the height of the tree, so the efficiency of the operations is dependant on the height of the tree. In other words, the effectiveness of the operations depends on how well we build our tree. 
 
 ![Binary search tree 5](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/bst5.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In the example above, you can see two binary trees for set **{1,2,3,4,5}**. The height of the left tree is 2, whereas the height of the right tree is 4.
 

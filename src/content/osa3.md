@@ -237,7 +237,7 @@ Let's first see a simple sorting algorithm, which sorts an array with *n* elemen
 
 
 ![Merge sort](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/insertionsort.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 
 Here we see the insertation sort in action. In each row, the element highlighted in gray is moved into its correct position in the beginning of the array. The line marks the location of where the array is sorted upto. The following code will implement this sorting:
@@ -277,7 +277,7 @@ Next we will look into two efficient sorting algorithms, which are based on recu
 ## Merge sort
 
 ![Merge sort](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/mergesort.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 *Merge sort* is a recursive sorting algorithm, which is based on halving the array. When we get an array of size *n* to be sorted, we split it from the middle into two subarray, which both have aproximately *n/2* elements. After this we sort the subarrays and *merge* the sorted subarrays, so that they form a complete ordered array. Recursion ends at *n = 1*, when array is already in order and nothing more needs to be done. The following code shows the functionality of merge sort:
 
@@ -316,7 +316,7 @@ How efficient is merge sort? Since all the calls in the method *sort* half the s
 ## Quick sort
 
 ![Merge sort](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/quicksort.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 *Quick sort* gives another type of recursive approach to sorting an array. When we receive an array to be sorted, we first choose one of its elements as the *pivot*. After this we shift the elements so, that the elements *smaller than the pivot* are on the left side of the pivot, and the elements *larger than the pivot* are on the right side, and equal elements can be *on either side*. Finally, we recursively sort the subarrays, which are formed on the left side and the right side of the pivot. The following code shows us this functionality:
 
@@ -357,7 +357,7 @@ The efficiency of quick sort is dependant on how the elements are divided around
 There is a possibility, that the pivot point divides the array unevenly. The image below illustrates a situation, where all the elements are on the right side of the pivot. This time quick sort takes up *O(n^2*), since there are *O(n)* recursive levels. It clearly is *not* a good idea to choose the first element of an array as the pivot in all cases. For example, an array that is already in order, takes up *O(n^2)* time.
 
 ![Merge sort](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/badsplit.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 
 Another situation is where an array has multiples of the same value. In extreme situation, *all the elements* are the same, which is a very possible input. This time the method **pivot** in our soilution will always create a bad result, where all the elements are on the right side of the pivot. It is not enough to choose a good pivot, but also the way of moving elements affects the efficiency of quick sort.
@@ -428,7 +428,7 @@ while a <= b
 The algorithm keeps track of the search range **\[a,b\]**, which at the beginning is **\[0, n-1\]**, since the element might be anywhere in the array. With each step the algorithm checks the element in the middle *k = (a+b)/2*. If it is *x*, the search ends. If the element is less than *x*, the search continues on the right side, and if it is more than *x*, the search continues on the left side. As the range is halved on each step, the time complexity is *O(log n)*.
 
 ![Binary search](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/binarysearch.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 The picture above shows the functionality, when we are looking for the value of *6* from an ordered array. At first, the range is the whole array, and the middle element is 4. Thuse we know, that if the array contains a 6, it has to be at the right half of the array. Next the range is the top half of the array, and the middle is at 7. Now we can deduct, that 6 has to be on the left side of this. The range is halved on each step, and as we continue, after two more steps there is only one element in the range, and it is 6, which we were looking for.
 

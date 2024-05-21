@@ -255,7 +255,7 @@ The table above gives us a ball park estimate of the sufficient time complexitie
 
 
 
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 ### A small example
 

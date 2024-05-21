@@ -16,7 +16,7 @@ There are several algorithms to finding shortest paths in a weighted graph, and 
 The most common situation in graph problems is to find the shortest path from node *a* to node *b*. Finding a single shortest path usually requires that we find other shortest paths before it, as well. Thus we concentrate to the most common problem from the beginning, where we have chosen a node as the source-node and we want to define for *each* node, how long is the shortest path from the source-node to that node, or what is the distance from the source.
 
 ![Weighted graph 1](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/weighted1.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In the picture above is an example of a graph, where the node *1* is the chosen source node, and next to each node is marked the distance to them in red. For example, to node *5* the distance is 9, since the shortest path from node *1* to node *5* is 1 &#8594; 3 &#8594; 5, whose distance is *2 + 7 = 9*. We will use this graph as our example, when we examine the next two algorithms for searching the shorest paths.
 
@@ -27,7 +27,7 @@ In the picture above is an example of a graph, where the node *1* is the chosen 
 The Bellman-Ford maintains an *approximation* of the distances of the nodes, so that in the beginning the distance to the source-node is *0* and the distance to all the other nodes is *infinite*. After this the algorithm starts to improve the distance by looking for edges in the graph, through which it could shorten the distance. With each step the algorithm searches an edge *a &#8594; b*, with which we can get to node *b* with a shorter distance from node *a* than previously. When none of the estimates can be improved, the algorithm ends and all the distances correspond to the real shortest path distances.
 
 ![Weighted graph 2](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/weighted2.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 The picture above shows an example of Bellman-Ford in action, with the source-node of *1*. Next to each node, the distance to them has been marked with red: In the beginning, the distance for node *1* is *0* and the distance to all the other nodes is *infinity*. Each change of distance can be seen in the picture as a separate step. First, we improve the distance to node *2* by going through the edge *1 &#8594; 2*, and get the distance of 8. Then we improve the distance to node *3* with edge *1 &#8594; 3*, getting the new distance of 2. We continue similarly, until we cannot improve any distance and all the distances correspond with the shortest path distances.
 
@@ -59,7 +59,7 @@ Our second observation is, that in a graph of *n* nodes, the shortest path to a 
 Let's see what happens in the repetitions of the algorithm. After the first one, we have found the shortest paths with maximum of one edge. After the second one we have found the shortest paths with a maximum of two edges. This continues, until after *n-1* repetitions we have found the shortest paths, with a maximum of *n-1* edges. As any of the shortest edges cannot have more edges, we have gone through all the shortest paths. To execute our algorithm, we require a maximum of *n-1* repetitions, which all go through the edges of the graph in time *O(m)*. Thus the algorithm finds the shortest paths in time *O(nm)*.
 
 ![Negative graph 1](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/negative1.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 What happens, if the graph has a negative cycle? In the picture above, we have a negative cycle *2 &#8594; 4 &#8594; 5 &#8594; 2*, whose weight is *-2*. In this situation the Bellman-Ford algorithm will continue forever, as we can shorten the paths going through the cycle infinately. The problem actually lies in the definition: a shortest path is not a reasonable statement, if the path includes a negative cycle. We can use Bellman-Ford to detect negative cycles in a graph: If a distance could be improved after *n-1* repetitions, the graph has a negative cycle.
 
@@ -71,7 +71,7 @@ What happens, if the graph has a negative cycle? In the picture above, we have a
 In Dijkstra's algorithm nodes are in two classes: visited and non-visited. In the beginning, all the nodes are non-visited. With each step the algorithm finds a node that has not been visited, and whose distance estimation is the smallest. Then the algorithm goes through all the edges originating from said node and tries to improve distances with them. After this node has been visited and the distance for it does not change, we have found out its final distance.
 
 ![Dijkstra 1](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/dijkstra1.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In the example above we see an example of Dijkstra's algorithm in action. The gray color of a node means it has been visited. At first we begin with node *1*, as its distance of *0* is the smallest. Now we have left nodes *2*, *3*, *4* and *5*, of which we choose node *3*, as its distance of *2* is the smallest. After this we choose to visit node *2*, whose distance is *6*. We continue this until we have visited all the nodes in the graph.
 
@@ -144,7 +144,7 @@ This implementation first goes through all the nodes and edges in time *O(n+m)*.
 What happens, if the graph does have a negative edge? Then the Dijkstra's algorithm doesn't necessarily work correctly. In the example below, the greedy algorithm takes the upper path and decides that shortest distance from *1* to *5* is *8*. However, the actually shortest distance would be the path below, whose distance is only *6*.
 
 ![Negative graph 2](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/negative2.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 ## Example: Trip planner
 
@@ -155,7 +155,7 @@ Creating a trip planner has one extra challenge: transportation have timetables,
 As all the trips take a positive amount of time, we can search the routes with Dijkstra's algorithm. We will implement the algorithm so, that to each location we define the *earliest* time, when we can get to a certain location. In the beginning we know, that we are at our starting position when we begin our trip. Then we visit another location, go through the connections starting from there, into which we can get to by keeping an optimal timetable. We can make our search significantly more efficient if we only take into consideration from each bus line only the first start, which we can make. This is justified, as in no situation could it be a better idea to wait for the later start.
 
 ![Trip planner 1](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/trip1.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 
 The picture above shows an example, where we want to move from location *1* to location *3*, and we begin our trip at *13:15*. From *1* to *2* there is a connection every 10 minutes, whose duration is 7 minutes, and from *1* to *3* there is a connection every 30 minutes, whose duration is 10 minutes. Thus we can get to location *2* at *13.27* and to location 3 at *13:40*.
@@ -174,7 +174,7 @@ Let's next look into a problem, where we want find the shortest paths *from all*
 The *Floyd-Warshall algorithm* forms an *n* sized *distance matrix*, where at row *a* column *b* is the shortest path distance from the node *a* to node *b*. The algorithm first initializes the matrix so, that it only contains the distances which can be traveled using a single edge, and all the others are marked with infinity. Then the algorithm takes *n* repetitions, numbered *1, 2, ..., n*. At a repetition *k* the algorithm searches for paths, which can go through the node *k* (called *intermediate node*) and possibly other nodes from *1, 2, ..., k-1* to be intermediate nodes. If such a path improves the distance, we update the new values to the matrix. In the end each node has been an intermediate node, and we have found all the shortest paths.
 
 ![Floyd-Warshall](https://github.com/centria/algot-ja-tira/raw/master/src/images/materials/floyd-warshall.png)  
-source: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
+lähde: [**Tietorakenteet ja algoritmit**](https://github.com/pllk/tirakirja/raw/master/tirakirja.pdf)
 
 In the picture above, we have an example of Floyd-Warshall in action. On the first repetition we search for paths, where *1* would be gone through. There are no such paths, as *1* cannot be reached from any other node, so the matrix does not change. On repetition *2* we notice, that we can reach node *4* from *1* by using *2* as an intermediate node, giving us the distance of *8*. Similarly we can get through *2* to node *4* from node *3*, getting the distance of *5*. We continue this way, until after repetition *4* we have reached all the distances and the matrix is complete.
 
