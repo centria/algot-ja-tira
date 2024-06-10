@@ -6,7 +6,8 @@ hidden: false
 
 Tervetuloa Algoritmit ja tietorakenteet -opintojaksolle!
 
-<Note><h1>Syksyllä käytössä on dotnet8.0!</h1></Note>
+<Note><h2>Dotnet 6.0 tuki päättyy.
+Syksyllä käytössä on dotnet8.0!</h2></Note>
 
 <Note>
 <a href="https://centria.github.io/algo-and-data/">English material behind this link!</a>
