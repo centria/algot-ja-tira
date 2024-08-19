@@ -30,7 +30,7 @@ Voit rekisteröityä opintojaksolle [TÄÄLTÄ](https://ella.eduplan.fi/centria/
 
 Alla oleva lista ei kata kaikkea, mutta on enemmänkin ohjeellinen, mitä odottaa jokaisessa osassa.
 
-| Part   |      Goal  
+| Osa   |      Tavoite      |  
 |----------|-------------|
 | 1| Ymmärrät algoritmien ja tietorakenteiden perusteet. Ymmärrät niiden merkityksen ohjelmistotuotannossa. |
 | 2| Ymmärrät aikavaativuuden ja *Iso O* -merkinnän.  |
