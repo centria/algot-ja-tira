@@ -52,8 +52,6 @@ Kun sinulla on tili luotuna, valitse VSCodessa oikea organisaatio ja opintojakso
 - Opintojakson valinta: *OPEN XX-XX Algorithms and Data Structures with C#* missä XX-XX on lukuvuosi.
 
 
-## Doing the exercises
-
 ## Tehtävien tekeminen
 
 Löydät jokaisen osion tehtävät aina luvun lopusta. Kaikissa luvuissa ei ole tehtäviä.
